@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oleksandr Syzonenko — CV</title>
+  <style>
+    :root{
+      --sage:#DCE6D5;
+      --sage-dark:#b8c8b0;
+      --ink:#1f2937;
+      --muted:#4b5563;
+      --white:#ffffff;
+      --accent:#111827;
+    }
+    *{box-sizing:border-box;}
+    html,body{margin:0;padding:0;background:#f7f7f7;color:var(--ink);}
+    body{font:16px/1.5 -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, Inter, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";}
+    .page{
+      max-width:920px;
+      margin:24px auto;
+      background:var(--white);
+      box-shadow:0 8px 30px rgba(0,0,0,.06);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:320px 1fr;
+      min-height:100%;
+    }
+    aside{
+      background:var(--sage);
+      padding:28px 24px 32px;
+    }
+    main{
+      padding:32px 40px;
+    }
+    .avatar{
+      width:108px;height:108px;border-radius:999px;
+      background:#cbd5e1;
+      display:block;
+      margin-bottom:18px;
+    }
+    h1{
+      font-size:34px;line-height:1.15;margin:0 0 4px;font-weight:800;letter-spacing:.5px;
+    }
+    .role{font-size:14px;color:var(--muted);margin-bottom:18px;text-transform:uppercase;letter-spacing:.12em;}
+    .contact{margin:14px 0 22px;display:grid;gap:8px;}
+    .contact a{color:inherit;text-decoration:none;}
+    .pill{
+      display:inline-flex;align-items:center;gap:10px;
+      margin:6px 0;color:var(--ink);
+    }
+    .pill svg{width:16px;height:16px;flex:0 0 16px;}
+    .section{margin:28px 0;}
+    .aside-title{
+      font-weight:800;font-size:13px;letter-spacing:.16em;
+      color:#111;opacity:.8;margin:18px 0 8px;
+    }
+    ul.clean{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+    .lang{display:flex;justify-content:space-between;font-size:14px;color:#111;}
+    .badge{height:6px;background:#94a3b8;border-radius:99px;overflow:hidden}
+    .badge > span{display:block;height:100%;background:var(--accent);width:80%;}
+    /* Main */
+    h2{
+      font-size:16px;letter-spacing:.14em;text-transform:uppercase;
+      margin:0 0 12px;color:var(--muted);
+    }
+    .about{margin-bottom:18px;color:#374151}
+    .job{margin:14px 0 16px;}
+    .job .top{display:flex;gap:8px;flex-wrap:wrap;align-items:baseline}
+    .job .company{font-weight:700}
+    .job .dates{color:var(--muted);font-size:14px}
+    .bullets{margin:8px 0 0 0;padding:0 0 0 18px;}
+    .bullets li{margin:6px 0;}
+    .edu-item{margin:10px 0 14px;}
+    .project-item{margin:8px 0;}
+    /* Print */
+    @media print{
+      body{background:#fff}
+      .page{box-shadow:none;margin:0}
+    }
+    /* Small screens */
+    @media (max-width:860px){
+      .grid{grid-template-columns:1fr}
+      main{padding:28px 24px}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="grid">
+      <aside>
+        <!-- Left column: name + role + contacts -->
+        <h1>Oleksandr Syzonenko</h1>
+        <div class="role">Unity Developer</div>
+        <div class="contact">
+          <div class="pill">
+            <!-- location icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10.5C21 16 12 22 12 22S3 16 3 10.5a9 9 0 1 1 18 0z"/><circle cx="12" cy="10.5" r="3"/></svg>
+            <span>Ukraine, Poltava</span>
+          </div>
+          <div class="pill">
+            <!-- mail icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="m22 7-10 6L2 7"/></svg>
+            <a href="mailto:a.d.sizonenko@gmail.com">a.d.sizonenko@gmail.com</a>
+          </div>
+          <div class="pill">
+            <!-- phone icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.11 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.77.59 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.47-1.16a2 2 0 0 1 2.11-.45c.84.27 1.71.47 2.61.59A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+380993670508">(+38) 099 367 05 08</a>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="aside-title">Skills</div>
+          <ul class="clean">
+            <li>Advanced C#</li>
+            <li>Unity 3D, MRTK, Oculus Integration</li>
+            <li>Photon, Zenject, REST API</li>
+            <li>Entity Framework, Firebase, MSSQL, MySQL</li>
+            <li>HDRP, Shader Graph, VFX Graph</li>
+            <li>IK Animations, Animations, Cinemachine</li>
+            <li>Agora SDK, OpenCV, ARKit, ARCore, TriLib2</li>
+            <li>Avaturn SDK, Chat GPT API</li>
+            <li><b>Unity Netcode</b></li>
+            <li><b>Custom Backend Integration</b></li>
+            <li><b>Addressables</b></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <div class="aside-title">Languages</div>
+          <div class="lang"><span>Ukrainian</span><span>Native</span></div>
+          <div class="lang"><span>Russian</span><span>Native</span></div>
+          <div class="lang"><span>English</span><span>B2</span></div>
+        </div>
+      </aside>
+
+      <main>
+        <section class="section">
+          <h2>About Me</h2>
+          <p class="about">
+            Unity developer with experience in VR/AR/MR projects, AI-driven mechanics, multiplayer systems, and backend integration.
+            Strong background in creating projects from scratch and optimizing pipelines for performance.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Experience</h2>
+
+          <div class="job">
+            <div class="top">
+              <div class="company">Suto Games — Unity Developer</div>
+              <div class="dates">Jul 2024 – Aug 2025</div>
+            </div>
+            <ul class="bullets">
+              <li>Built multiplayer features using Unity Netcode.</li>
+              <li>Integrated custom backend services for live ops.</li>
+              <li>Implemented asset delivery & memory optimization with Addressables.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="top">
+              <div class="company">Qualium Systems (Remote) — Unity Developer</div>
+              <div class="dates">Mar 2023 – Jun 2024</div>
+            </div>
+            <ul class="bullets">
+              <li>AI/VR gameplay development.</li>
+              <li>MR football training project with ball tracking.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="top">
+              <div class="company">Code &amp; Care (Remote) — Unity Developer</div>
+              <div class="dates">Dec 2022 – Mar 2023</div>
+            </div>
+            <ul class="bullets">
+              <li>Advanced animations (IK, Cinemachine) and gameplay features.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="top">
+              <div class="company">Qualium Systems (Kharkiv) — Unity Developer</div>
+              <div class="dates">Jun 2021 – Nov 2022</div>
+            </div>
+            <ul class="bullets">
+              <li>VR/AR/MR projects from scratch, tooling & pipelines.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Education</h2>
+          <div class="edu-item">
+            <strong>Poltava Polytechnic College</strong> — Junior Bachelor, Software Engineering<br/>
+            <span class="dates">Sep 2018 – Jul 2022</span>
+          </div>
+          <div class="edu-item">
+            <strong>Senior STEP Academy</strong> — Software Development<br/>
+            <span class="dates">May 2017 – Jan 2020</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Projects</h2>
+          <div class="project-item">
+            <strong>Diploma project</strong> — VR FPS (Unity Learn base) with Oculus Integration.
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
